@@ -76,8 +76,8 @@ ctaBtn[0].textContent = ctaContent[1];
 ctaImg[0].setAttribute('src', ctaContent[2]);
 
 // main section
-const mainSectionH4 = document.querySelectorAll('section div div h4')
-const mainSectionP = document.querySelectorAll('section div div p')
+const mainSectionH4 = document.querySelectorAll('h4')
+const mainSectionP = document.querySelectorAll('p')
 
 const mainContents = Object.values(siteContent["main-content"]);
 
