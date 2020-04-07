@@ -75,43 +75,38 @@ ctaH1[0].textContent = ctaContent[0];
 ctaBtn[0].textContent = ctaContent[1];
 ctaImg[0].setAttribute('src', ctaContent[2]);
 
-// middle section
-const mainSection = document.querySelectorAll('section div div h4')
+// main section
+const mainSectionH4 = document.querySelectorAll('section div div h4')
 const mainSectionP = document.querySelectorAll('section div div p')
 
 const mainContents = Object.values(siteContent["main-content"]);
-console.log(mainContents)
 
-// main section
-let firstH4 = document.body.children[0].children[2].children[0].children[0].children[0].textContent = mainContents[0];
-let firstP = document.body.children[0].children[2].children[0].children[0].children[1].textContent = mainContents[1];
+mainSectionH4[0].textContent = mainContents[0]
+mainSectionH4[1].textContent = mainContents[2]
+mainSectionH4[2].textContent = mainContents[5]
+mainSectionH4[3].textContent = mainContents[7]
+mainSectionH4[4].textContent = mainContents[9]
 
-let secondH4 = document.body.children[0].children[2].children[0].children[1].children[0].textContent = mainContents[2]
-let secondP = document.body.children[0].children[2].children[0].children[1].children[1].textContent = mainContents[3]
+mainSectionP[0].textContent = mainContents[1]
+mainSectionP[1].textContent = mainContents[3]
+mainSectionP[2].textContent = mainContents[6]
+mainSectionP[3].textContent = mainContents[8]
+mainSectionP[4].textContent = mainContents[10]
 
 let mainLogo = document.getElementById("middle-img");
 mainLogo.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-let thirdH4 = document.body.children[0].children[2].children[2].children[0].children[0].textContent = mainContents[5];
-let thirdP = document.body.children[0].children[2].children[2].children[0].children[1].textContent = mainContents[6];
-
-let fourthH4 = document.body.children[0].children[2].children[2].children[1].children[0].textContent = mainContents[7]
-let fourthP = document.body.children[0].children[2].children[2].children[1].children[1].textContent = mainContents[8]
-
-let fifthH4 = document.body.children[0].children[2].children[2].children[2].children[0].textContent = mainContents[9]
-let fifthP = document.body.children[0].children[2].children[2].children[2].children[1].textContent = mainContents[10]
 
 // Contact section
+const contactP = document.querySelectorAll('.contact p');
+const contactH4 = document.querySelectorAll('.contact h4');
 const contactContents = Object.values(siteContent["contact"]);
-console.log(contactContents)
 
-let contactH4 = document.body.children[0].children[3].children[0].textContent = contactContents[0];
+contactH4[0].textContent = contactContents[0];
 
-let contactP1 = document.body.children[0].children[3].children[1].textContent = contactContents[1];
-
-let contactP2 = document.body.children[0].children[3].children[2].textContent = contactContents[2];
-
-let contactP3 = document.body.children[0].children[3].children[3].textContent = contactContents[3];
+contactP[0].textContent = contactContents[1];
+contactP[1].textContent = contactContents[2];
+contactP[2].textContent = contactContents[3];
 
 // footer section
 const footerContents = Object.values(siteContent["footer"]);
